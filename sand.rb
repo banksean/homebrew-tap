@@ -5,13 +5,13 @@
 class Sand < Formula
   desc "Local development sandbox containers"
   homepage "https://github.com/banksean/sand"
-  version "0.0.5-b"
+  version "0.0.5-c"
   license "Apache"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/banksean/sand/releases/download/v0.0.5-b/sand_darwin_amd64.tar.gz"
-    sha256 "fb35d598af98abc5977739b4e18a32cb7b9ce1e49998cc6db07d96f68b6c7a82"
+    url "https://github.com/banksean/sand/releases/download/v0.0.5-c/sand_darwin_amd64.tar.gz"
+    sha256 "0e7a69bd8e59a83572a6fb710e497f30eedcd257abe47d4d3b6705d41b3abea9"
 
     define_method(:install) do
       bin.install "sand"
@@ -19,8 +19,8 @@ class Sand < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/banksean/sand/releases/download/v0.0.5-b/sand_darwin_arm64.tar.gz"
-    sha256 "ff4f9e708760b22a39041e42109a2599aa5e332eb67ce4f73f85428de54b30a5"
+    url "https://github.com/banksean/sand/releases/download/v0.0.5-c/sand_darwin_arm64.tar.gz"
+    sha256 "510d1291d7b7964e7c667a4e633dc19b163c4dcda58ef76b5c776f9d17214c76"
 
     define_method(:install) do
       bin.install "sand"
